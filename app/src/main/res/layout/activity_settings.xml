@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+<com.rey.material.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Buyer.SettingsActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+    android:layout_height="50dp"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:id="@+id/app_bar_settings">
+    <androidx.appcompat.widget.Toolbar
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+
+    <RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/close_settings_btn"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="@android:color/white"
+        android:text="Close"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/update_account_settings_btn"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="@android:color/white"
+        android:text="Update"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"/>
+</RelativeLayout>
+
+
+
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+<!--    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--        android:layout_height="130dp"-->
+<!--        android:layout_width="130dp"-->
+<!--        android:id="@+id/settings_profile_image"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:layout_below="@+id/app_bar_settings"-->
+<!--        android:src="@drawable/profile"/>-->
+<!--    <de.hdodenhof.circleimageview.CircleImageView-->
+<!--        xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--        android:id="@+id/settings_profile_image"-->
+<!--        android:layout_width="96dp"-->
+<!--        android:layout_height="96dp"-->
+<!--        android:src="@drawable/profile"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        app:civ_border_width="2dp"-->
+<!--        app:civ_border_color="#FF000000"-->
+<!--        android:layout_below="@+id/app_bar_settings"-->
+<!--        />-->
+    <ImageView
+        android:layout_height="130dp"
+           android:layout_width="130dp"
+           android:id="@+id/settings_profile_image"
+           android:layout_centerHorizontal="true"
+          android:layout_marginTop="20dp"
+           android:layout_below="@+id/app_bar_settings"
+           android:src="@drawable/profile"/>
+    <ImageView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/upload"
+        android:layout_toStartOf="@id/profile_image_change_btn"
+        android:src="@drawable/upload"
+        android:layout_alignTop="@id/profile_image_change_btn"/>
+        <TextView
+            android:id="@+id/profile_image_change_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/settings_profile_image"
+
+            android:layout_marginTop="11dp"
+android:layout_centerHorizontal="true"
+            android:text="@string/change_profile"
+            android:textColor="@android:color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/settings_phone_number"
+            android:layout_below="@+id/profile_image_change_btn"
+            android:padding="10dp"
+            android:layout_margin="15dp"
+            android:hint="@string/phone_number"/>
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/settings_full_name"
+            android:layout_below="@+id/settings_phone_number"
+            android:padding="10dp"
+            android:layout_margin="15dp"
+            android:hint="@string/full_name"/>
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/settings_address"
+            android:layout_below="@+id/settings_full_name"
+            android:padding="10dp"
+            android:layout_margin="15dp"
+            android:hint="@string/address"
+            />
+
+
+
+    </com.rey.material.widget.RelativeLayout>
+
+</ScrollView>

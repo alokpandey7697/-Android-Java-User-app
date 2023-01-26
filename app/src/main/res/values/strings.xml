@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">USER</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="address">Address</string>
+    <string name="full_name">Full Name...</string>
+    <string name="phone_number">Phone Number...</string>
+    <string name="change_profile">Change Profile</string>
+    <string name="title_activity_seller_home">SellerHomeActivity</string>
+    <string name="title_home">Home</string>
+</resources>
